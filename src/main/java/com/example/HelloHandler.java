@@ -10,6 +10,8 @@ import org.springframework.cloud.function.adapter.azure.AzureSpringBootRequestHa
 
 import java.util.Optional;
 
+//@ComponentScan(basePackageClasses = BookRepository.class)
+//@Import(DbConfig.class)
 public class HelloHandler extends AzureSpringBootRequestHandler<User, Greeting> {
 
     @FunctionName("hello")
